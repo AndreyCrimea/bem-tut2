@@ -4,46 +4,76 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+
     <title>Document</title>
   </head>
   <body>
     <header class="header">
       <div class="header__top">
-        <div class="header__left">
-          <div class="main__logo">
-            <a href="" class="main__logo-link">
-              <img src="" alt="" class="main__logo-img" />
-            </a>
-          </div>
-        </div>
-        <div class="header__right">
-          <div class="header__phone"></div>
-          <div class="header__button-wrapper">
-            <button class="button__guote">GET A QUOTE</button>
+        <div class="container">
+          <div class="header__top-wrapper">
+            <div class="header__left">
+              <div class="main__logo">
+                <a href="" class="main__logo-link">
+                  <img class="main__logo-img" src="svg/logo_main.svg" alt="" />
+                </a>
+              </div>
+            </div>
+
+            <div class="header__right">
+              <div class="header__phone">
+                <img class="phone__img" src="svg/phone 1.svg" alt="" />
+                <a class="phone__number-link" href="tel:8002980044"
+                  >800-298-0044</a
+                >
+
+                <div class="header__office-hours">Office hours 7 AM - 7 PM</div>
+              </div>
+              <div class="header__button-wrapper">
+                <button class="button__guote">GET A QUOTE</button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
       <div class="header__links">
-        <div class="links-list">
-          <ul class="links-list">
-            <li class="list-item">
-              <a href="" class="item-link">SERVICES</a>
-            </li>
-            <li class="list-item">
-              <a href="" class="item-link">FAQ/TIPS</a>
-            </li>
-            <li class="list-item">
-              <a href="" class="item-link">REVIEWS</a>
-            </li>
-            <li class="list-item">
-              <a href="" class="item-link">LOCATIONS</a>
-            </li>
-            <li class="list-item">
-              <a href="" class="item-link">RESERVATION</a>
-            </li>
-          </ul>
+        <div class="container">
+          <div class="header__links-wrapper">
+            <div class="links-wrapper">
+              <ul class="links-list">
+                <li class="list__item">
+                  <a href="" class="item-link">SERVICES</a>
+                </li>
+                <li class="list__item">
+                  <a href="" class="item-link">FAQ/TIPS</a>
+                </li>
+                <li class="list__item">
+                  <a href="" class="item-link">REVIEWS</a>
+                </li>
+                <li class="list__item list__item--activated">
+                  <a href="" class="item-link">LOCATIONS</a>
+                </li>
+                <li class="list__item">
+                  <a href="" class="item-link">RESERVATION</a>
+                </li>
+              </ul>
+            </div>
+            <div class="header__region-selector">
+              <div class="region__text">Your region:</div>
+              <div class="region__selector"></div>
+            </div>
+          </div>
         </div>
-        <div class="header__region-selector">select</div>
       </div>
     </header>
     <section class="preview">
@@ -65,21 +95,28 @@
               </span>
             </div>
             <div class="preview__watch-video">
-              <a href="" class="preview__video-link"></a>
+              <a href="" class="preview__video-link">
+                <div class="preview__video-text">Watch how we work</div>
+                <img class="preview__video-svg" src="svg/video_play.svg" />
+              </a>
             </div>
           </div>
           <div class="preview__card">
             <h1 class="preview__card-title">Get Your Quote Online!</h1>
             <form class="preview__card-form" action="">
-              <input class="card__input" type="text" placeholder="Move Date" />
+              <input
+                class="card__input-date card_input"
+                type="text"
+                placeholder="Move Date"
+              />
               <div class="card__delivery-inputs">
                 <input
-                  class="card__input-from"
+                  class="card__input-from card_input"
                   type="text"
                   placeholder="From Zip"
                 />
                 <input
-                  class="card__input-to"
+                  class="card__input-to card_input"
                   type="text"
                   placeholder="To Zip"
                 />
@@ -89,11 +126,11 @@
               </div>
             </form>
             <div class="card__number">
-              or
-              <a href="tel:8002980044" class="call__number">(800) 298-0044</a>
+              <span class="number__decorator">or</span>
+              <a href="tel:8002980044" class="number__link">(800) 298-0044</a>
             </div>
             <div class="card__privacy-wrapper">
-              <p class="privacy__text">We do not share your data</p>
+              <span class="privacy__text">We do not share your data</span>
               <div class="privacy__links">
                 <a href="" class="privacy__link">Data Protection</a>
                 <span class="privacy__link-sep">&</span>
@@ -109,15 +146,29 @@
         <div class="advatages__wrapper">
           <h1 class="main__header">Full Service Moving Company</h1>
           <div class="advatages__header-menu">
-            <div class="advatages__header-item">Residental</div>
-            <div class="advatages__header-item">Commercial</div>
-            <div class="advatages__header-item">Long Distance</div>
+            <div class="advatages__header-item header-item--active">
+              <span class="item_text">Residentals</span>
+            </div>
+            <div class="advatages__header-item">
+              <span class="item_text">Commercial</span>
+            </div>
+            <div class="advatages__header-item">
+              <span class="item_text">Long Distance</span>
+            </div>
           </div>
           <div class="advatages__tips-content">
-            <div class="tips__left">
-              <div class="tips__item-left">
+            <div class="tips__list">
+              <div class="tips__item">
                 <div class="tips__item-head">
-                  <img class="item__img" src="" alt="" />
+                  <div class="item__wrapper">
+                    <div class="item__box">
+                      <img
+                        class="item__img"
+                        src="svg/service_cards/1.svg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
                   <h1 class="item__head-text">Reliable & Reputable</h1>
                 </div>
                 <div class="item__content-text content__text">
@@ -130,9 +181,17 @@
                   </p>
                 </div>
               </div>
-              <div class="tips__item-left">
+              <div class="tips__item">
                 <div class="tips__item-head">
-                  <img class="item__img" src="" alt="" />
+                  <div class="item__wrapper">
+                    <div class="item__box">
+                      <img
+                        class="item__img"
+                        src="svg/service_cards/2.svg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
                   <h1 class="item__head-text">Reliable & Reputable</h1>
                 </div>
                 <div class="item__content-text content__text">
@@ -145,9 +204,17 @@
                   </p>
                 </div>
               </div>
-              <div class="tips__item-left">
+              <div class="tips__item">
                 <div class="tips__item-head">
-                  <img class="item__img" src="" alt="" />
+                  <div class="item__wrapper">
+                    <div class="item__box">
+                      <img
+                        class="item__img"
+                        src="svg/service_cards/3.svg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
                   <h1 class="item__head-text">Reliable & Reputable</h1>
                 </div>
                 <div class="item__content-text content__text">
@@ -164,11 +231,19 @@
             <div class="tips__image">
               <img class="tips__img" src="" alt="" />
             </div>
-            <div class="tips__right">
-              <div class="tips__item-right">
-                <div class="tips__item-head">
+            <div class="tips__list">
+              <div class="tips__item">
+                <div class="tips__item-head tips__item-reversed">
                   <h1 class="item__head-text">Reliable & Reputable</h1>
-                  <img class="item__img" src="" alt="" />
+                  <div class="item__wrapper">
+                    <div class="item__box">
+                      <img
+                        class="item__img"
+                        src="svg/service_cards/4.svg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
                 </div>
                 <div class="item__content-text content__text">
                   <p>
@@ -180,10 +255,18 @@
                   </p>
                 </div>
               </div>
-              <div class="tips__item-right">
-                <div class="tips__item-head">
+              <div class="tips__item">
+                <div class="tips__item-head tips__item-reversed">
                   <h1 class="item__head-text">Reliable & Reputable</h1>
-                  <img class="item__img" src="" alt="" />
+                  <div class="item__wrapper">
+                    <div class="item__box">
+                      <img
+                        class="item__img"
+                        src="svg/service_cards/5.svg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
                 </div>
                 <div class="item__content-text content__text">
                   <p>
@@ -195,10 +278,18 @@
                   </p>
                 </div>
               </div>
-              <div class="tips__item-right">
-                <div class="tips__item-head">
+              <div class="tips__item">
+                <div class="tips__item-head tips__item-reversed">
                   <h1 class="item__head-text">Reliable & Reputable</h1>
-                  <img class="item__img" src="" alt="" />
+                  <div class="item__wrapper">
+                    <div class="item__box">
+                      <img
+                        class="item__img"
+                        src="svg/service_cards/6.svg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
                 </div>
                 <div class="item__content-text content__text">
                   <p>
@@ -219,18 +310,18 @@
       <div class="container">
         <div class="best__wrapper">
           <h1 class="main__header">Why are we the best</h1>
-          <div class="best__rewards">
+          <div class="best__rewards-list">
             <div class="reward__item">
-              <img class="reward__img" src="" alt="" />
+              <img class="reward__img" src="img/logo_cards/1.png" alt="" />
             </div>
             <div class="reward__item">
-              <img class="reward__img" src="" alt="" />
+              <img class="reward__img" src="img/logo_cards/2.png" alt="" />
             </div>
             <div class="reward__item">
-              <img class="reward__img" src="" alt="" />
+              <img class="reward__img" src="img/logo_cards/3.png" alt="" />
             </div>
             <div class="reward__item">
-              <img class="reward__img" src="" alt="" />
+              <img class="reward__img" src="img/logo_cards/4.png" alt="" />
             </div>
           </div>
         </div>
@@ -242,114 +333,139 @@
           <h1 class="main__header">Rates</h1>
           <div class="rates-cards__list">
             <div class="rates-card__item">
-              <div class="rates-item__header">
-                <div class="rates-item__header-period"></div>
-                <div class="rates-item__header-text"></div>
-              </div>
-              <div class="rates-item__content">
-                <div class="rates-item__pricing">
-                  <div class="rates-item-content__pricing-top">
-                    starting from
+              <div class="rates-item__most-popular">Most Popular</div>
+              <div class="rates-item__wrapper">
+                <div class="rates-item__header back-img1">
+                  <div class="rates-item__header-period">HOURLY</div>
+                  <div class="rates-item__header-text">2MOVERS</div>
+                </div>
+                <div class="rates-item__content">
+                  <div class="rates-item__pricing">
+                    <div class="rates-item-content__pricing-top">
+                      starting from
+                    </div>
+                    <div class="rates-item-content__price">89</div>
+                    <div class="rates-item-content__period">per hour</div>
                   </div>
-                  <div class="rates-item-content__price">89</div>
-                  <div class="rates-item-content__period">per hour</div>
-                </div>
-                <div class="rates-item__content-list">
-                  <ul class="content-list">
-                    <li class="content-item">Typical for 1 bedroom or less</li>
-                    <li class="content-item">Typical for 5 hours or less</li>
-                    <li class="content-item">Packing / Unpacking</li>
-                    <li class="content-item">Assembly / Disassembly</li>
-                    <li class="content-item">Blankets / Wardrobe Boxes</li>
-                    <li class="content-item">No Deposit / No Hidden Fees</li>
-                  </ul>
-                </div>
-                <div class="rates-item__button-quote">
-                  <button class="button__guote">GET A QUOTE</button>
+                  <div class="rates-item__content-list">
+                    <ul class="content-list">
+                      <li class="content-item">
+                        Typical for 1 bedroom or less
+                      </li>
+                      <li class="content-item">Typical for 5 hours or less</li>
+                      <li class="content-item">Packing / Unpacking</li>
+                      <li class="content-item">Assembly / Disassembly</li>
+                      <li class="content-item">Blankets / Wardrobe Boxes</li>
+                      <li class="content-item">No Deposit / No Hidden Fees</li>
+                    </ul>
+                  </div>
+                  <div class="rates-item__button-quote">
+                    <button class="button__guote">GET A QUOTE</button>
+                  </div>
                 </div>
               </div>
             </div>
             <div class="rates-card__item rates-card__popular">
-              <div class="rates-item__header">
-                <div class="rates-item__header-period"></div>
-                <div class="rates-item__header-text"></div>
-              </div>
-              <div class="rates-item__content">
-                <div class="rates-item__pricing">
-                  <div class="rates-item-content__pricing-top">
-                    starting from
+              <div class="rates-item__most-popular">Most Popular</div>
+              <div class="rates-item__wrapper">
+                <div class="rates-item__header back-img2">
+                  <div class="rates-item__header-period">HOURLY</div>
+                  <div class="rates-item__header-text">3movers or more</div>
+                </div>
+                <div class="rates-item__content">
+                  <div class="rates-item__pricing">
+                    <div class="rates-item-content__pricing-top">
+                      starting from
+                    </div>
+                    <div class="rates-item-content__price">89</div>
+                    <div class="rates-item-content__period">per hour</div>
                   </div>
-                  <div class="rates-item-content__price">89</div>
-                  <div class="rates-item-content__period">per hour</div>
-                </div>
-                <div class="rates-item__content-list">
-                  <ul class="content-list">
-                    <li class="content-item">Typical for 1 bedroom or less</li>
-                    <li class="content-item">Typical for 5 hours or less</li>
-                    <li class="content-item">Packing / Unpacking</li>
-                    <li class="content-item">Assembly / Disassembly</li>
-                    <li class="content-item">Blankets / Wardrobe Boxes</li>
-                    <li class="content-item">No Deposit / No Hidden Fees</li>
-                  </ul>
-                </div>
-                <div class="rates-item__button-quote">
-                  <button class="button__guote">GET A QUOTE</button>
+                  <div class="rates-item__content-list">
+                    <ul class="content-list">
+                      <li class="content-item">
+                        Typical for 1 bedroom or less
+                      </li>
+                      <li class="content-item">Typical for 5 hours or less</li>
+                      <li class="content-item">Packing / Unpacking</li>
+                      <li class="content-item">Assembly / Disassembly</li>
+                      <li class="content-item">Blankets / Wardrobe Boxes</li>
+                      <li class="content-item">No Deposit / No Hidden Fees</li>
+                    </ul>
+                  </div>
+                  <div class="rates-item__button-quote">
+                    <button class="button__guote">GET A QUOTE</button>
+                  </div>
                 </div>
               </div>
             </div>
             <div class="rates-card__item">
-              <div class="rates-item__header">
-                <div class="rates-item__header-period"></div>
-                <div class="rates-item__header-text"></div>
-              </div>
-              <div class="rates-item__content">
-                <div class="rates-item__pricing">
-                  <div class="rates-item-content__pricing-top">
-                    starting from
+              <div class="rates-item__most-popular">Most Popular</div>
+              <div class="rates-item__wrapper">
+                <div class="rates-item__header back-img3">
+                  <div class="rates-item__header-period">HOURLY FLAT RATE</div>
+                  <div class="rates-item__header-text">
+                    commercial/ office movers
                   </div>
-                  <div class="rates-item-content__price">89</div>
-                  <div class="rates-item-content__period">per hour</div>
                 </div>
-                <div class="rates-item__content-list">
-                  <ul class="content-list">
-                    <li class="content-item">Typical for 1 bedroom or less</li>
-                    <li class="content-item">Typical for 5 hours or less</li>
-                    <li class="content-item">Packing / Unpacking</li>
-                    <li class="content-item">Assembly / Disassembly</li>
-                    <li class="content-item">Blankets / Wardrobe Boxes</li>
-                    <li class="content-item">No Deposit / No Hidden Fees</li>
-                  </ul>
-                </div>
-                <div class="rates-item__button-quote">
-                  <button class="button__guote">GET A QUOTE</button>
+                <div class="rates-item__content">
+                  <div class="rates-item__pricing">
+                    <div class="rates-item-content__pricing-top">
+                      starting from
+                    </div>
+                    <div class="rates-item-content__price">89</div>
+                    <div class="rates-item-content__period">per hour</div>
+                  </div>
+                  <div class="rates-item__content-list">
+                    <ul class="content-list">
+                      <li class="content-item">
+                        Typical for 1 bedroom or less
+                      </li>
+                      <li class="content-item">Typical for 5 hours or less</li>
+                      <li class="content-item">Packing / Unpacking</li>
+                      <li class="content-item">Assembly / Disassembly</li>
+                      <li class="content-item">Blankets / Wardrobe Boxes</li>
+                      <li class="content-item">No Deposit / No Hidden Fees</li>
+                    </ul>
+                  </div>
+                  <div class="rates-item__button-quote">
+                    <button class="button__guote">GET A QUOTE</button>
+                  </div>
                 </div>
               </div>
             </div>
             <div class="rates-card__item">
-              <div class="rates-item__header">
-                <div class="rates-item__header-period"></div>
-                <div class="rates-item__header-text"></div>
-              </div>
-              <div class="rates-item__content">
-                <div class="rates-item__pricing">
-                  <div class="rates-item-content__pricing-top">
-                    starting from
+              <div class="rates-item__most-popular">Most Popular</div>
+              <div class="rates-item__wrapper">
+                <div class="rates-item__header back-img3">
+                  <div class="rates-item__header-period">FLAT RATE</div>
+                  <div class="rates-item__header-text">
+                    long distance (California)
                   </div>
-                  <div class="rates-item-content__price">89</div>
-                  <div class="rates-item-content__period">per hour</div>
                 </div>
-                <div class="rates-item__content-list">
-                  <ul class="content-list">
-                    <li class="content-item">Typical for 1 bedroom or less</li>
-                    <li class="content-item">Typical for 5 hours or less</li>
-                    <li class="content-item">Packing / Unpacking</li>
-                    <li class="content-item">Assembly / Disassembly</li>
-                    <li class="content-item">Blankets / Wardrobe Boxes</li>
-                    <li class="content-item">No Deposit / No Hidden Fees</li>
-                  </ul>
-                </div>
-                <div class="rates-item__button-quote">
-                  <button class="button__guote">GET A QUOTE</button>
+                <div class="rates-item__content">
+                  <div class="rates-item__pricing">
+                    <!-- <div class="rates-item-content__pricing-top">
+                      starting from
+                    </div>
+                    <div class="rates-item-content__price">89</div>
+                    <div class="rates-item-content__period">per hour</div> -->
+                    <div class="rates-item-text">flat rates</div>
+                  </div>
+                  <div class="rates-item__content-list">
+                    <ul class="content-list">
+                      <li class="content-item">
+                        Typical for 1 bedroom or less
+                      </li>
+                      <li class="content-item">Typical for 5 hours or less</li>
+                      <li class="content-item">Packing / Unpacking</li>
+                      <li class="content-item">Assembly / Disassembly</li>
+                      <li class="content-item">Blankets / Wardrobe Boxes</li>
+                      <li class="content-item">No Deposit / No Hidden Fees</li>
+                    </ul>
+                  </div>
+                  <div class="rates-item__button-quote">
+                    <button class="button__guote">GET A QUOTE</button>
+                  </div>
                 </div>
               </div>
             </div>
@@ -369,34 +485,78 @@
             property, and serving customers with integrity. Join us today.
           </div>
           <div class="clients__list">
-            <img class="clients__item-img" src="" alt="" />
+            <div class="clients__item-wrapper">
+              <img
+                class="clients__item-img"
+                src="svg/clients_cards/1.svg"
+                alt=""
+              />
+            </div>
+            <div class="clients__item-wrapper">
+              <img
+                class="clients__item-img"
+                src="svg/clients_cards/2.svg"
+                alt=""
+              />
+            </div>
+            <div class="clients__item-wrapper">
+              <img
+                class="clients__item-img"
+                src="svg/clients_cards/3.svg"
+                alt=""
+              />
+            </div>
+            <div class="clients__item-wrapper">
+              <img
+                class="clients__item-img"
+                src="svg/clients_cards/4.svg"
+                alt=""
+              />
+            </div>
+            <div class="clients__item-wrapper">
+              <img
+                class="clients__item-img"
+                src="svg/clients_cards/5.svg"
+                alt=""
+              />
+            </div>
+            <div class="clients__item-wrapper">
+              <img
+                class="clients__item-img"
+                src="svg/clients_cards/6.svg"
+                alt=""
+              />
+            </div>
           </div>
         </div>
       </div>
     </section>
     <section class="examples">
       <div class="container">
-        <div class="examples__list">
-          <div class="examples__item">
-            <img class="examples__item-img" src="" alt="" />
-            <div class="examples__item-text content__text">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book. It has
-              survived not only five centuries, but also the leap into
-              electronic typesetting, remaining essentially uncha
+        <div class="examples__wrapper">
+          <div class="main__header">Examples of our work</div>
+          <div class="examples__list">
+            <div class="examples__item">
+              <img class="examples__item-img" src="" alt="" />
+              <div class="examples__item-text content__text">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book. It has
+                survived not only five centuries, but also the leap into
+                electronic typesetting, remaining essentially uncha
+              </div>
             </div>
-          </div>
-          <div class="examples__item">
-            <img class="examples__item-img" src="" alt="" />
-            <div class="examples__item-text content__text">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book. It has
-              survived not only five centuries, but also the leap into
-              electronic typesetting, remaining essentially uncha
+            <div class="examples__item">
+              <img class="examples__item-img" src="" alt="" />
+              <div class="examples__item-text content__text">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book. It has
+                survived not only five centuries, but also the leap into
+                electronic typesetting, remaining essentially uncha
+              </div>
             </div>
           </div>
         </div>
@@ -428,14 +588,14 @@
                   <h1 class="address__header">River Bed</h1>
                   <div class="address__location">
                     <div class="address__street">
-                      <img class="address__location-svg" src="" alt="" />
+                      <i class="fa-solid fa-location-dot"></i>
                       <a href="" class="address__link">Sacramento</a>
                     </div>
                     <div class="address__sep">
                       <img class="address__sep-svg" src="" alt="" />
                     </div>
                     <div class="address__city">
-                      <img class="address__location-svg" src="" alt="" />
+                      <i class="fa-solid fa-location-dot"></i>
                       <a href="" class="address__link">Los Angeles</a>
                     </div>
                   </div>
@@ -456,14 +616,14 @@
                   <h1 class="address__header">River Bed</h1>
                   <div class="address__location">
                     <div class="address__street">
-                      <img class="address__location-svg" src="" alt="" />
+                      <i class="fa-solid fa-location-dot"></i>
                       <a href="" class="address__link">Sacramento</a>
                     </div>
                     <div class="address__sep">
                       <img class="address__sep-svg" src="" alt="" />
                     </div>
                     <div class="address__city">
-                      <img class="address__location-svg" src="" alt="" />
+                      <i class="fa-solid fa-location-dot"></i>
                       <a href="" class="address__link">Los Angeles</a>
                     </div>
                   </div>
@@ -484,14 +644,14 @@
                   <h1 class="address__header">River Bed</h1>
                   <div class="address__location">
                     <div class="address__street">
-                      <img class="address__location-svg" src="" alt="" />
+                      <i class="fa-solid fa-location-dot"></i>
                       <a href="" class="address__link">Sacramento</a>
                     </div>
                     <div class="address__sep">
                       <img class="address__sep-svg" src="" alt="" />
                     </div>
                     <div class="address__city">
-                      <img class="address__location-svg" src="" alt="" />
+                      <i class="fa-solid fa-location-dot"></i>
                       <a href="" class="address__link">Los Angeles</a>
                     </div>
                   </div>
@@ -512,14 +672,14 @@
                   <h1 class="address__header">River Bed</h1>
                   <div class="address__location">
                     <div class="address__street">
-                      <img class="address__location-svg" src="" alt="" />
+                      <i class="fa-solid fa-location-dot"></i>
                       <a href="" class="address__link">Sacramento</a>
                     </div>
                     <div class="address__sep">
                       <img class="address__sep-svg" src="" alt="" />
                     </div>
                     <div class="address__city">
-                      <img class="address__location-svg" src="" alt="" />
+                      <i class="fa-solid fa-location-dot"></i>
                       <a href="" class="address__link">Los Angeles</a>
                     </div>
                   </div>
@@ -540,14 +700,14 @@
                   <h1 class="address__header">River Bed</h1>
                   <div class="address__location">
                     <div class="address__street">
-                      <img class="address__location-svg" src="" alt="" />
+                      <i class="fa-solid fa-location-dot"></i>
                       <a href="" class="address__link">Sacramento</a>
                     </div>
                     <div class="address__sep">
                       <img class="address__sep-svg" src="" alt="" />
                     </div>
                     <div class="address__city">
-                      <img class="address__location-svg" src="" alt="" />
+                      <i class="fa-solid fa-location-dot"></i>
                       <a href="" class="address__link">Los Angeles</a>
                     </div>
                   </div>
@@ -568,14 +728,14 @@
                   <h1 class="address__header">River Bed</h1>
                   <div class="address__location">
                     <div class="address__street">
-                      <img class="address__location-svg" src="" alt="" />
+                      <i class="fa-solid fa-location-dot"></i>
                       <a href="" class="address__link">Sacramento</a>
                     </div>
                     <div class="address__sep">
                       <img class="address__sep-svg" src="" alt="" />
                     </div>
                     <div class="address__city">
-                      <img class="address__location-svg" src="" alt="" />
+                      <i class="fa-solid fa-location-dot"></i>
                       <a href="" class="address__link">Los Angeles</a>
                     </div>
                   </div>
@@ -596,14 +756,14 @@
                   <h1 class="address__header">River Bed</h1>
                   <div class="address__location">
                     <div class="address__street">
-                      <img class="address__location-svg" src="" alt="" />
+                      <i class="fa-solid fa-location-dot"></i>
                       <a href="" class="address__link">Sacramento</a>
                     </div>
                     <div class="address__sep">
                       <img class="address__sep-svg" src="" alt="" />
                     </div>
                     <div class="address__city">
-                      <img class="address__location-svg" src="" alt="" />
+                      <i class="fa-solid fa-location-dot"></i>
                       <a href="" class="address__link">Los Angeles</a>
                     </div>
                   </div>
@@ -624,14 +784,14 @@
                   <h1 class="address__header">River Bed</h1>
                   <div class="address__location">
                     <div class="address__street">
-                      <img class="address__location-svg" src="" alt="" />
+                      <i class="fa-solid fa-location-dot"></i>
                       <a href="" class="address__link">Sacramento</a>
                     </div>
                     <div class="address__sep">
                       <img class="address__sep-svg" src="" alt="" />
                     </div>
                     <div class="address__city">
-                      <img class="address__location-svg" src="" alt="" />
+                      <i class="fa-solid fa-location-dot"></i>
                       <a href="" class="address__link">Los Angeles</a>
                     </div>
                   </div>
@@ -922,5 +1082,9 @@
       </div>
       <div class="rights">Copyright © 2019 All right reserved</div>
     </footer>
+    <script
+      src="https://kit.fontawesome.com/ce8672ee35.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
