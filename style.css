@@ -1137,6 +1137,7 @@
   flex-flow: row;
   justify-content: center;
   gap: 30px;
+  width: 100%;
 }
 
 .contact__input-areas {
