@@ -9,11 +9,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+
+    <link rel="stylesheet" href="Flickity.css" media="screen" />
 
     <title>Document</title>
   </head>
@@ -535,27 +538,88 @@
       <div class="container">
         <div class="examples__wrapper">
           <div class="main__header">Examples of our work</div>
-          <div class="examples__list">
-            <div class="examples__item">
-              <img class="examples__item-img" src="" alt="" />
-              <div class="examples__item-text content__text">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s, when an unknown printer took a galley
-                of type and scrambled it to make a type specimen book. It has
-                survived not only five centuries, but also the leap into
-                electronic typesetting, remaining essentially uncha
+          <div
+            class="examples__list main-carousel"
+            data-flickity='{"contain": true, "cellAlign": "left" }'
+          >
+            <div class="examples__item carousel-cell">
+              <div class="example__item-wrapper">
+                <div class="exapmle__img-wrapper">
+                  <img
+                    class="examples__item-img"
+                    src="img/examples_karusel/1.png"
+                    alt=""
+                  />
+                </div>
+                <div class="examples__item-text content__text">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since the 1500s, when an unknown
+                  printer took a galley of type and scrambled it to make a type
+                  specimen book. It has survived not only five centuries, but
+                  also the leap into electronic typesetting, remaining
+                  essentially uncha
+                </div>
               </div>
             </div>
-            <div class="examples__item">
-              <img class="examples__item-img" src="" alt="" />
-              <div class="examples__item-text content__text">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s, when an unknown printer took a galley
-                of type and scrambled it to make a type specimen book. It has
-                survived not only five centuries, but also the leap into
-                electronic typesetting, remaining essentially uncha
+            <div class="examples__item carousel-cell">
+              <div class="example__item-wrapper">
+                <div class="exapmle__img-wrapper">
+                  <img
+                    class="examples__item-img"
+                    src="img/examples_karusel/2.png"
+                    alt=""
+                  />
+                </div>
+                <div class="examples__item-text content__text">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since the 1500s, when an unknown
+                  printer took a galley of type and scrambled it to make a type
+                  specimen book. It has survived not only five centuries, but
+                  also the leap into electronic typesetting, remaining
+                  essentially uncha
+                </div>
+              </div>
+            </div>
+            <div class="examples__item carousel-cell">
+              <div class="example__item-wrapper">
+                <div class="exapmle__img-wrapper">
+                  <img
+                    class="examples__item-img"
+                    src="img/examples_karusel/2.png"
+                    alt=""
+                  />
+                </div>
+                <div class="examples__item-text content__text">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since the 1500s, when an unknown
+                  printer took a galley of type and scrambled it to make a type
+                  specimen book. It has survived not only five centuries, but
+                  also the leap into electronic typesetting, remaining
+                  essentially uncha
+                </div>
+              </div>
+            </div>
+            <div class="examples__item carousel-cell">
+              <div class="example__item-wrapper">
+                <div class="exapmle__img-wrapper">
+                  <img
+                    class="examples__item-img"
+                    src="img/examples_karusel/2.png"
+                    alt=""
+                  />
+                </div>
+                <div class="examples__item-text content__text">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since the 1500s, when an unknown
+                  printer took a galley of type and scrambled it to make a type
+                  specimen book. It has survived not only five centuries, but
+                  also the leap into electronic typesetting, remaining
+                  essentially uncha
+                </div>
               </div>
             </div>
           </div>
@@ -563,20 +627,40 @@
       </div>
     </section>
     <section class="reviews">
-      <div class="content">
+      <div class="container">
         <div class="reviews__wrapper">
           <div class="reviews__header">
+            <div class="transparent"></div>
             <h1 class="main__header">Reviews</h1>
             <div class="reviews__button">
               <button class="reviews__button-view-all-reviews">
                 View all reviews
               </button>
             </div>
-            <div class="reviews__slider">
-              <div class="slider__item">
+          </div>
+          <div
+            class="reviews__slider main-carousel"
+            data-flickity='{"contain": true, "cellAlign": "left" }'
+          >
+            <div class="slider__item carousel-cell">
+              <div class="slider__item-wrapper">
                 <div class="slider__header">
-                  <img class="slider__rating-img" src="" alt="" />
-                  <img class="slider__company-img" src="" alt="" />
+                  <div class="slider__header-wrapper">
+                    <div class="slider__rating-img-wrapper">
+                      <img
+                        class="slider__rating-img"
+                        src="svg/star.svg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="slider__company-img-wrapper">
+                      <img
+                        class="slider__company-img"
+                        src="img/review_cards/google.png"
+                        alt=""
+                      />
+                    </div>
+                  </div>
                 </div>
                 <div class="slider__content">
                   I was really impressed with Trek Movers. They have their sh*t
@@ -591,9 +675,7 @@
                       <i class="fa-solid fa-location-dot"></i>
                       <a href="" class="address__link">Sacramento</a>
                     </div>
-                    <div class="address__sep">
-                      <img class="address__sep-svg" src="" alt="" />
-                    </div>
+                    <div class="address__sep">></div>
                     <div class="address__city">
                       <i class="fa-solid fa-location-dot"></i>
                       <a href="" class="address__link">Los Angeles</a>
@@ -601,10 +683,26 @@
                   </div>
                 </div>
               </div>
-              <div class="slider__item">
+            </div>
+            <div class="slider__item carousel-cell">
+              <div class="slider__item-wrapper">
                 <div class="slider__header">
-                  <img class="slider__rating-img" src="" alt="" />
-                  <img class="slider__company-img" src="" alt="" />
+                  <div class="slider__header-wrapper">
+                    <div class="slider__rating-img-wrapper">
+                      <img
+                        class="slider__rating-img"
+                        src="svg/star.svg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="slider__company-img-wrapper">
+                      <img
+                        class="slider__company-img"
+                        src="img/review_cards/yelp.png"
+                        alt=""
+                      />
+                    </div>
+                  </div>
                 </div>
                 <div class="slider__content">
                   I was really impressed with Trek Movers. They have their sh*t
@@ -619,9 +717,7 @@
                       <i class="fa-solid fa-location-dot"></i>
                       <a href="" class="address__link">Sacramento</a>
                     </div>
-                    <div class="address__sep">
-                      <img class="address__sep-svg" src="" alt="" />
-                    </div>
+                    <div class="address__sep">></div>
                     <div class="address__city">
                       <i class="fa-solid fa-location-dot"></i>
                       <a href="" class="address__link">Los Angeles</a>
@@ -629,10 +725,26 @@
                   </div>
                 </div>
               </div>
-              <div class="slider__item">
+            </div>
+            <div class="slider__item carousel-cell">
+              <div class="slider__item-wrapper">
                 <div class="slider__header">
-                  <img class="slider__rating-img" src="" alt="" />
-                  <img class="slider__company-img" src="" alt="" />
+                  <div class="slider__header-wrapper">
+                    <div class="slider__rating-img-wrapper">
+                      <img
+                        class="slider__rating-img"
+                        src="svg/star.svg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="slider__company-img-wrapper">
+                      <img
+                        class="slider__company-img"
+                        src="img/review_cards/google.png"
+                        alt=""
+                      />
+                    </div>
+                  </div>
                 </div>
                 <div class="slider__content">
                   I was really impressed with Trek Movers. They have their sh*t
@@ -647,9 +759,7 @@
                       <i class="fa-solid fa-location-dot"></i>
                       <a href="" class="address__link">Sacramento</a>
                     </div>
-                    <div class="address__sep">
-                      <img class="address__sep-svg" src="" alt="" />
-                    </div>
+                    <div class="address__sep">></div>
                     <div class="address__city">
                       <i class="fa-solid fa-location-dot"></i>
                       <a href="" class="address__link">Los Angeles</a>
@@ -657,10 +767,26 @@
                   </div>
                 </div>
               </div>
-              <div class="slider__item">
+            </div>
+            <div class="slider__item carousel-cell">
+              <div class="slider__item-wrapper">
                 <div class="slider__header">
-                  <img class="slider__rating-img" src="" alt="" />
-                  <img class="slider__company-img" src="" alt="" />
+                  <div class="slider__header-wrapper">
+                    <div class="slider__rating-img-wrapper">
+                      <img
+                        class="slider__rating-img"
+                        src="svg/star.svg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="slider__company-img-wrapper">
+                      <img
+                        class="slider__company-img"
+                        src="img/review_cards/yelp.png"
+                        alt=""
+                      />
+                    </div>
+                  </div>
                 </div>
                 <div class="slider__content">
                   I was really impressed with Trek Movers. They have their sh*t
@@ -675,9 +801,7 @@
                       <i class="fa-solid fa-location-dot"></i>
                       <a href="" class="address__link">Sacramento</a>
                     </div>
-                    <div class="address__sep">
-                      <img class="address__sep-svg" src="" alt="" />
-                    </div>
+                    <div class="address__sep">></div>
                     <div class="address__city">
                       <i class="fa-solid fa-location-dot"></i>
                       <a href="" class="address__link">Los Angeles</a>
@@ -685,10 +809,26 @@
                   </div>
                 </div>
               </div>
-              <div class="slider__item">
+            </div>
+            <div class="slider__item carousel-cell">
+              <div class="slider__item-wrapper">
                 <div class="slider__header">
-                  <img class="slider__rating-img" src="" alt="" />
-                  <img class="slider__company-img" src="" alt="" />
+                  <div class="slider__header-wrapper">
+                    <div class="slider__rating-img-wrapper">
+                      <img
+                        class="slider__rating-img"
+                        src="svg/star.svg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="slider__company-img-wrapper">
+                      <img
+                        class="slider__company-img"
+                        src="img/review_cards/google.png"
+                        alt=""
+                      />
+                    </div>
+                  </div>
                 </div>
                 <div class="slider__content">
                   I was really impressed with Trek Movers. They have their sh*t
@@ -703,9 +843,7 @@
                       <i class="fa-solid fa-location-dot"></i>
                       <a href="" class="address__link">Sacramento</a>
                     </div>
-                    <div class="address__sep">
-                      <img class="address__sep-svg" src="" alt="" />
-                    </div>
+                    <div class="address__sep">></div>
                     <div class="address__city">
                       <i class="fa-solid fa-location-dot"></i>
                       <a href="" class="address__link">Los Angeles</a>
@@ -713,10 +851,26 @@
                   </div>
                 </div>
               </div>
-              <div class="slider__item">
+            </div>
+            <div class="slider__item carousel-cell">
+              <div class="slider__item-wrapper">
                 <div class="slider__header">
-                  <img class="slider__rating-img" src="" alt="" />
-                  <img class="slider__company-img" src="" alt="" />
+                  <div class="slider__header-wrapper">
+                    <div class="slider__rating-img-wrapper">
+                      <img
+                        class="slider__rating-img"
+                        src="svg/star.svg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="slider__company-img-wrapper">
+                      <img
+                        class="slider__company-img"
+                        src="img/review_cards/yelp.png"
+                        alt=""
+                      />
+                    </div>
+                  </div>
                 </div>
                 <div class="slider__content">
                   I was really impressed with Trek Movers. They have their sh*t
@@ -731,9 +885,7 @@
                       <i class="fa-solid fa-location-dot"></i>
                       <a href="" class="address__link">Sacramento</a>
                     </div>
-                    <div class="address__sep">
-                      <img class="address__sep-svg" src="" alt="" />
-                    </div>
+                    <div class="address__sep">></div>
                     <div class="address__city">
                       <i class="fa-solid fa-location-dot"></i>
                       <a href="" class="address__link">Los Angeles</a>
@@ -741,10 +893,26 @@
                   </div>
                 </div>
               </div>
-              <div class="slider__item">
+            </div>
+            <div class="slider__item carousel-cell">
+              <div class="slider__item-wrapper">
                 <div class="slider__header">
-                  <img class="slider__rating-img" src="" alt="" />
-                  <img class="slider__company-img" src="" alt="" />
+                  <div class="slider__header-wrapper">
+                    <div class="slider__rating-img-wrapper">
+                      <img
+                        class="slider__rating-img"
+                        src="svg/star.svg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="slider__company-img-wrapper">
+                      <img
+                        class="slider__company-img"
+                        src="img/review_cards/google.png"
+                        alt=""
+                      />
+                    </div>
+                  </div>
                 </div>
                 <div class="slider__content">
                   I was really impressed with Trek Movers. They have their sh*t
@@ -759,9 +927,7 @@
                       <i class="fa-solid fa-location-dot"></i>
                       <a href="" class="address__link">Sacramento</a>
                     </div>
-                    <div class="address__sep">
-                      <img class="address__sep-svg" src="" alt="" />
-                    </div>
+                    <div class="address__sep">></div>
                     <div class="address__city">
                       <i class="fa-solid fa-location-dot"></i>
                       <a href="" class="address__link">Los Angeles</a>
@@ -769,10 +935,26 @@
                   </div>
                 </div>
               </div>
-              <div class="slider__item">
+            </div>
+            <div class="slider__item carousel-cell">
+              <div class="slider__item-wrapper">
                 <div class="slider__header">
-                  <img class="slider__rating-img" src="" alt="" />
-                  <img class="slider__company-img" src="" alt="" />
+                  <div class="slider__header-wrapper">
+                    <div class="slider__rating-img-wrapper">
+                      <img
+                        class="slider__rating-img"
+                        src="svg/star.svg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="slider__company-img-wrapper">
+                      <img
+                        class="slider__company-img"
+                        src="img/review_cards/yelp.png"
+                        alt=""
+                      />
+                    </div>
+                  </div>
                 </div>
                 <div class="slider__content">
                   I was really impressed with Trek Movers. They have their sh*t
@@ -787,9 +969,7 @@
                       <i class="fa-solid fa-location-dot"></i>
                       <a href="" class="address__link">Sacramento</a>
                     </div>
-                    <div class="address__sep">
-                      <img class="address__sep-svg" src="" alt="" />
-                    </div>
+                    <div class="address__sep">></div>
                     <div class="address__city">
                       <i class="fa-solid fa-location-dot"></i>
                       <a href="" class="address__link">Los Angeles</a>
@@ -804,95 +984,180 @@
     </section>
     <section class="questions">
       <div class="container">
-        <h1 class="questions__wrapper">h1.main__header</h1>
-        <div class="questions__list">
-          <div class="question__item">
-            <div class="question__item-header">
-              <img class="question__arrow" src="" alt="" />
-              <div class="question__item-title">
-                Trek Movers specializes in what types of moves?
-              </div>
-            </div>
-            <div class="question__item-dropdown">
-              <div class="question__dropdown-text">
-                Although we mostly perform local residential moving, we also
-                help businesses relocate too. Additionally, we can accommodate
-                your long-distance move anywhere within the state of California.
-              </div>
-            </div>
+        <div class="questions__wrapper">
+          <div class="question__header-wrapper">
+            <h1 class="main__header">
+              Have questions?<br />
+              Well, we have answers
+            </h1>
           </div>
-          <div class="question__item">
-            <div class="question__item-header">
-              <img class="question__arrow" src="" alt="" />
-              <div class="question__item-title">
-                Trek Movers specializes in what types of moves?
+          <div class="questions__list">
+            <div class="question__item">
+              <input class="item__checkbox" type="checkbox" id="check1" />
+              <div class="item__label-wrapper">
+                <label class="item__label" for="check1">
+                  <div class="question__item-header">
+                    <img class="question__arrow" src="svg/arrows.svg" alt="" />
+                    <div class="question__item-title noselect">
+                      Trek Movers specializes in what types of moves?
+                    </div>
+                  </div>
+                </label>
+              </div>
+              <div class="question__item-dropdown">
+                <div class="question__dropdown-text content__text">
+                  Although we mostly perform local residential moving, we also
+                  help businesses relocate too. Additionally, we can accommodate
+                  your long-distance move anywhere within the state of
+                  California.
+                </div>
               </div>
             </div>
-            <div class="question__item-dropdown">
-              <div class="question__dropdown-text">
-                Although we mostly perform local residential moving, we also
-                help businesses relocate too. Additionally, we can accommodate
-                your long-distance move anywhere within the state of California.
+            <div class="question__item">
+              <input class="item__checkbox" type="checkbox" id="check2" />
+              <div class="item__label-wrapper">
+                <label class="item__label" for="check2">
+                  <div class="question__item-header">
+                    <img class="question__arrow" src="svg/arrows.svg" alt="" />
+                    <div class="question__item-title noselect">
+                      Trek Movers specializes in what types of moves?
+                    </div>
+                  </div>
+                </label>
+              </div>
+              <div class="question__item-dropdown">
+                <div class="question__dropdown-text content__text">
+                  Although we mostly perform local residential moving, we also
+                  help businesses relocate too. Additionally, we can accommodate
+                  your long-distance move anywhere within the state of
+                  California.
+                </div>
               </div>
             </div>
-          </div>
-          <div class="question__item">
-            <div class="question__item-header">
-              <img class="question__arrow" src="" alt="" />
-              <div class="question__item-title">
-                Trek Movers specializes in what types of moves?
+            <div class="question__item">
+              <input class="item__checkbox" type="checkbox" id="check3" />
+              <div class="item__label-wrapper">
+                <label class="item__label" for="check3">
+                  <div class="question__item-header">
+                    <img class="question__arrow" src="svg/arrows.svg" alt="" />
+                    <div class="question__item-title noselect">
+                      Trek Movers specializes in what types of moves?
+                    </div>
+                  </div>
+                </label>
+              </div>
+              <div class="question__item-dropdown">
+                <div class="question__dropdown-text content__text">
+                  Although we mostly perform local residential moving, we also
+                  help businesses relocate too. Additionally, we can accommodate
+                  your long-distance move anywhere within the state of
+                  California.
+                </div>
               </div>
             </div>
-            <div class="question__item-dropdown">
-              <div class="question__dropdown-text">
-                Although we mostly perform local residential moving, we also
-                help businesses relocate too. Additionally, we can accommodate
-                your long-distance move anywhere within the state of California.
+            <div class="question__item">
+              <input class="item__checkbox" type="checkbox" id="check4" />
+              <div class="item__label-wrapper">
+                <label class="item__label" for="check4">
+                  <div class="question__item-header">
+                    <img class="question__arrow" src="svg/arrows.svg" alt="" />
+                    <div class="question__item-title noselect">
+                      Trek Movers specializes in what types of moves?
+                    </div>
+                  </div>
+                </label>
+              </div>
+              <div class="question__item-dropdown">
+                <div class="question__dropdown-text content__text">
+                  Although we mostly perform local residential moving, we also
+                  help businesses relocate too. Additionally, we can accommodate
+                  your long-distance move anywhere within the state of
+                  California.
+                </div>
               </div>
             </div>
-          </div>
-          <div class="question__item">
-            <div class="question__item-header">
-              <img class="question__arrow" src="" alt="" />
-              <div class="question__item-title">
-                Trek Movers specializes in what types of moves?
+            <div class="question__item">
+              <input class="item__checkbox" type="checkbox" id="check5" />
+              <div class="item__label-wrapper">
+                <label class="item__label" for="check5">
+                  <div class="question__item-header">
+                    <img class="question__arrow" src="svg/arrows.svg" alt="" />
+                    <div class="question__item-title noselect">
+                      Trek Movers specializes in what types of moves?
+                    </div>
+                  </div>
+                </label>
+              </div>
+              <div class="question__item-dropdown">
+                <div class="question__dropdown-text content__text">
+                  Although we mostly perform local residential moving, we also
+                  help businesses relocate too. Additionally, we can accommodate
+                  your long-distance move anywhere within the state of
+                  California.
+                </div>
               </div>
             </div>
-            <div class="question__item-dropdown">
-              <div class="question__dropdown-text">
-                Although we mostly perform local residential moving, we also
-                help businesses relocate too. Additionally, we can accommodate
-                your long-distance move anywhere within the state of California.
+            <div class="question__item">
+              <input class="item__checkbox" type="checkbox" id="check6" />
+              <div class="item__label-wrapper">
+                <label class="item__label" for="check6">
+                  <div class="question__item-header">
+                    <img class="question__arrow" src="svg/arrows.svg" alt="" />
+                    <div class="question__item-title noselect">
+                      Trek Movers specializes in what types of moves?
+                    </div>
+                  </div>
+                </label>
+              </div>
+              <div class="question__item-dropdown">
+                <div class="question__dropdown-text content__text">
+                  Although we mostly perform local residential moving, we also
+                  help businesses relocate too. Additionally, we can accommodate
+                  your long-distance move anywhere within the state of
+                  California.
+                </div>
               </div>
             </div>
-          </div>
-          <div class="question__item">
-            <div class="question__item-header">
-              <img class="question__arrow" src="" alt="" />
-              <div class="question__item-title">
-                Trek Movers specializes in what types of moves?
+            <div class="question__item">
+              <input class="item__checkbox" type="checkbox" id="check7" />
+              <div class="item__label-wrapper">
+                <label class="item__label" for="check7">
+                  <div class="question__item-header">
+                    <img class="question__arrow" src="svg/arrows.svg" alt="" />
+                    <div class="question__item-title noselect">
+                      Trek Movers specializes in what types of moves?
+                    </div>
+                  </div>
+                </label>
+              </div>
+              <div class="question__item-dropdown">
+                <div class="question__dropdown-text content__text">
+                  Although we mostly perform local residential moving, we also
+                  help businesses relocate too. Additionally, we can accommodate
+                  your long-distance move anywhere within the state of
+                  California.
+                </div>
               </div>
             </div>
-            <div class="question__item-dropdown">
-              <div class="question__dropdown-text">
-                Although we mostly perform local residential moving, we also
-                help businesses relocate too. Additionally, we can accommodate
-                your long-distance move anywhere within the state of California.
+            <div class="question__item">
+              <input class="item__checkbox" type="checkbox" id="check8" />
+              <div class="item__label-wrapper">
+                <label class="item__label" for="check8">
+                  <div class="question__item-header">
+                    <img class="question__arrow" src="svg/arrows.svg" alt="" />
+                    <div class="question__item-title noselect">
+                      Trek Movers specializes in what types of moves?
+                    </div>
+                  </div>
+                </label>
               </div>
-            </div>
-          </div>
-          <div class="question__item">
-            <div class="question__item-header">
-              <img class="question__arrow" src="" alt="" />
-              <div class="question__item-title">
-                Trek Movers specializes in what types of moves?
-              </div>
-            </div>
-            <div class="question__item-dropdown">
-              <div class="question__dropdown-text">
-                Although we mostly perform local residential moving, we also
-                help businesses relocate too. Additionally, we can accommodate
-                your long-distance move anywhere within the state of California.
+              <div class="question__item-dropdown">
+                <div class="question__dropdown-text content__text">
+                  Although we mostly perform local residential moving, we also
+                  help businesses relocate too. Additionally, we can accommodate
+                  your long-distance move anywhere within the state of
+                  California.
+                </div>
               </div>
             </div>
           </div>
@@ -903,17 +1168,25 @@
       <div class="container">
         <div class="callus__wrapper">
           <h1 class="main__header">Call Us For Expert Advice</h1>
-          <div class="callus__content-text content__text">
-            Without doubt, the best way to prepare for a move – and to save on
-            cost – is to take a few minutes to speak with an expert. An expert
-            advisor will plan your move based on your individual requirements,
-            providing the most cost-effective solutions unique to you. We are
-            never interested in short-term gain. We want to save you money so
-            that might recommend us to your social circle, helping us to sustain
-            our business in the longer-term. Call us today.
+          <div class="callus__text-wrapper">
+            <div class="callus__content-text content__text">
+              Without doubt, the best way to prepare for a move – and to save on
+              cost – is to take a few minutes to speak with an expert. An expert
+              advisor will plan your move based on your individual requirements,
+              providing the most cost-effective solutions unique to you. We are
+              never interested in short-term gain. We want to save you money so
+              that might recommend us to your social circle, helping us to
+              sustain our business in the longer-term. Call us today.
+            </div>
           </div>
-          <div class="callus__bottom">
-            <img class="callus__trucks-img" src="" alt="" />
+        </div>
+      </div>
+      <div class="callus__bottom">
+        <div class="container">
+          <div class="callus__bottom-wrapper">
+            <div class="callus__trucks-img-wrapper">
+              <img class="callus__trucks-img" src="img/авто.png" alt="" />
+            </div>
             <div class="callus__text">Let’s get moving</div>
             <div class="callus__button-quote">
               <button class="button__guote">GET A QUOTE</button>
@@ -923,168 +1196,198 @@
       </div>
     </section>
     <section class="areas">
-      <div class="areas__container">
-        <div class="areas__left">
-          <div class="areas__left-losangeles">
-            <div class="areas__header">
-              <ul class="areas__header-yellow-list">
-                <li class="areas__item-yellow">Los Angeles</li>
-              </ul>
+      <div class="container">
+        <div class="areas__container">
+          <div class="areas__wrapper">
+            <div class="areas__header-text">
+              <div class="main__header">Areas of services</div>
             </div>
-            <div class="areas__places">
-              <ul class="areas__header-yellow-list">
-                <li class="areas__item-yellow">Anaheim</li>
-                <li class="areas__item-yellow">Beverly Hills</li>
-                <li class="areas__item-yellow">Burbank</li>
-                <li class="areas__item-yellow">Culver city</li>
-                <li class="areas__item-yellow">Downtown</li>
-                <li class="areas__item-yellow">El Segundo</li>
-                <li class="areas__item-yellow">Encino</li>
-                <li class="areas__item-yellow">Glendale</li>
-                <li class="areas__item-yellow">Hollywood</li>
-                <li class="areas__item-yellow">West Hollywood</li>
-                <li class="areas__item-yellow">North Hollywood</li>
-                <li class="areas__item-yellow">Huntington Beach</li>
-                <li class="areas__item-yellow">Irvine</li>
-                <li class="areas__item-yellow">Long Beach</li>
-              </ul>
-            </div>
-          </div>
-          <div class="areas__left-near-losangeles">
-            <div class="areas__header">
-              <div class="areas__header-text"></div>
-            </div>
-            <div class="areas__places">
-              <ul class="areas__header-list">
-                <li class="areas__item-yellow">Anaheim</li>
-                <li class="areas__item-yellow">Beverly Hills</li>
-                <li class="areas__item-yellow">Burbank</li>
-                <li class="areas__item-yellow">Culver city</li>
-                <li class="areas__item-yellow">Downtown</li>
-                <li class="areas__item-yellow">El Segundo</li>
-                <li class="areas__item-yellow">Encino</li>
-                <li class="areas__item-yellow">Glendale</li>
-                <li class="areas__item-yellow">Hollywood</li>
-                <li class="areas__item-yellow">West Hollywood</li>
-                <li class="areas__item-yellow">North Hollywood</li>
-                <li class="areas__item-yellow">Huntington Beach</li>
-                <li class="areas__item-yellow">Irvine</li>
-                <li class="areas__item-yellow">Long Beach</li>
-              </ul>
+            <div class="areas__content">
+              <div class="areas__left">
+                <div class="areas__left-losangeles">
+                  <div class="areas__header">
+                    <ul class="areas__header-first areas__title-bold">
+                      <li class="areas__item yellow-marker">Los Angeles</li>
+                    </ul>
+                  </div>
+                  <div class="areas__places">
+                    <ul class="areas__header-list">
+                      <li class="areas__item yellow-marker">Anaheim</li>
+                      <li class="areas__item yellow-marker">Beverly Hills</li>
+                      <li class="areas__item yellow-marker">Burbank</li>
+                      <li class="areas__item yellow-marker">Culver city</li>
+                      <li class="areas__item yellow-marker">Downtown</li>
+                      <li class="areas__item yellow-marker">El Segundo</li>
+                      <li class="areas__item yellow-marker">Encino</li>
+                      <li class="areas__item yellow-marker">Glendale</li>
+                      <li class="areas__item yellow-marker">Hollywood</li>
+                      <li class="areas__item yellow-marker">West Hollywood</li>
+                      <li class="areas__item yellow-marker">North Hollywood</li>
+                      <li class="areas__item yellow-marker">
+                        Huntington Beach
+                      </li>
+                      <li class="areas__item yellow-marker">Irvine</li>
+                      <li class="areas__item yellow-marker">Long Beach</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="areas__left-near-losangeles">
+                  <div class="areas__header-second areas__title-bold">
+                    <div class="areas__item">
+                      Moving Services near Los Angeles
+                    </div>
+                  </div>
+                  <div class="areas__places">
+                    <ul class="areas__header-list">
+                      <li class="areas__item">Anaheim</li>
+                      <li class="areas__item">Beverly Hills</li>
+                      <li class="areas__item">Burbank</li>
+                      <li class="areas__item">Culver city</li>
+                      <li class="areas__item">Downtown</li>
+                      <li class="areas__item">El Segundo</li>
+                      <li class="areas__item">Encino</li>
+                      <li class="areas__item">Glendale</li>
+                      <li class="areas__item">Hollywood</li>
+                      <li class="areas__item">West Hollywood</li>
+                      <li class="areas__item">North Hollywood</li>
+                      <li class="areas__item">Huntington Beach</li>
+                      <li class="areas__item">Irvine</li>
+                      <li class="areas__item">Long Beach</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="areas__right">
+                <img class="areas__map-img" src="img/map.png" alt="" />
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="areas__right">
-        <img class="areas__map-img" src="" alt="" />
-      </div>
     </section>
     <footer class="footer">
-      <div class="container">
-        <div class="footer__wrapper">
-          <div class="footer__left">
-            <div class="footer__logo">
-              <div class="main__logo">
-                <a href="" class="main__logo-link">
-                  <img src="" alt="" class="main__logo-img" />
+      <div class="footer__bg-color">
+        <div class="container">
+          <div class="footer__wrapper">
+            <div class="footer__left">
+              <div class="footer__logo">
+                <div class="main__logo">
+                  <a href="" class="main__logo-link">
+                    <img
+                      class="main__logo-img"
+                      src="svg/logo_main.svg"
+                      alt=""
+                    />
+                  </a>
+                </div>
+              </div>
+              <div class="footer__contact">
+                <div class="footer__contact-item">
+                  <div class="contact__header">ADDRESS</div>
+                  <div class="contact__content">
+                    1624 The Alameda, Unit G,<br />
+                    San Jose, CA 95126
+                  </div>
+                </div>
+                <div class="footer__contact-item">
+                  <div class="contact__header">CONTACT</div>
+                  <div class="contact__content">
+                    <div class="contact__phone">
+                      <span class="content__bold">Phone: </span>
+                      <a
+                        class="contact__phone contact__link"
+                        href="tel:8002980044"
+                      >
+                        800-298-0044
+                      </a>
+                    </div>
+                    <div class="contact__email">
+                      <a
+                        class="contact__mailto contact__link"
+                        href="mailto:contact@trekmovers.com"
+                        >contact@trekmovers.com</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="footer__contact-item">
+                  <div class="contact__header">OFFICE HOURS</div>
+                  <div class="contact__content">7 AM - 7 PM</div>
+                </div>
+              </div>
+              <div class="footer__license">
+                <div class="footer__license-header">
+                  LICENSE/MOVING PERMIT NUMVER:
+                </div>
+                <div class="footer__license-content">CAL P.U.C.T0191956</div>
+              </div>
+              <div class="footer__social-links">
+                <a href="" class="social__link">
+                  <i class="icon_link fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="" class="social__link">
+                  <i class="icon_link fa-brands fa-twitter"></i>
+                </a>
+                <a href="" class="social__link">
+                  <i class="icon_link fa-solid fa-house-chimney"></i>
+                </a>
+                <a href="" class="social__link">
+                  <i class="icon_link fa-brands fa-youtube"></i>
+                </a>
+                <a href="" class="social__link">
+                  <i class="icon_link fa-brands fa-yelp"></i>
+                </a>
+                <a href="" class="social__link">
+                  <i class="icon_link fa-brands fa-google"></i>
+                </a>
+                <a href="" class="social__link">
+                  <i class="icon_link fa-brands fa-google-drive"></i>
                 </a>
               </div>
             </div>
-            <div class="footer__contact">
-              <div class="footer__contact-item">
-                <div class="contact__header">ADDRESS</div>
-                <div class="contact__content">
-                  1624 The Alameda, Unit G, San Jose, CA 95126
-                </div>
-              </div>
-              <div class="footer__contact-item">
-                <div class="contact__header">CONTACT</div>
-                <div class="contact__content">
-                  <div class="contact__phone">
-                    <span class="content__bold">Phone: </span>
-                    <a href="tel:8002980044" class="contact__phone">
-                      800-298-0044
-                    </a>
+            <div class="footer__right">
+              <form class="contact__form">
+                <div class="contact__input-areas">
+                  <div class="contact__line">
+                    <input
+                      class="contact__input-text"
+                      type="text"
+                      placeholder="Your name*"
+                    />
+                    <input
+                      class="contact__input-text"
+                      type="text"
+                      placeholder="Your email*"
+                    />
+                    <input
+                      class="contact__input-text"
+                      type="text"
+                      placeholder="Subjact"
+                    />
                   </div>
-                  <div class="contact__email">
-                    <a
-                      class="contact__mailto"
-                      href="mailto:contact@trekmovers.com"
-                    ></a>
+                  <textarea
+                    type="text"
+                    class="contact__input-textarea"
+                    placeholder="Message*"
+                  ></textarea>
+                  <div class="contact__button">
+                    <button class="button__guote">SEND MESSAGE</button>
                   </div>
                 </div>
-              </div>
-              <div class="footer__contact-item">
-                <div class="contact__header">OFFICE HOURS</div>
-                <div class="contact__content">7 AM - 7 PM</div>
-              </div>
-              <div class="footer__contact-item"></div>
+              </form>
             </div>
-            <div class="footer__license">
-              <div class="footer__license-header">
-                LICENSE/MOVING PERMIT NUMVER:
-              </div>
-              <div class="footer__license-content">CAL P.U.C.T0191956</div>
-            </div>
-            <div class="footer__social-links">
-              <a href="" class="social__link">
-                <img src="" alt="" class="social__img" />
-              </a>
-              <a href="" class="social__link">
-                <img src="" alt="" class="social__img" />
-              </a>
-              <a href="" class="social__link">
-                <img src="" alt="" class="social__img" />
-              </a>
-              <a href="" class="social__link">
-                <img src="" alt="" class="social__img" />
-              </a>
-              <a href="" class="social__link">
-                <img src="" alt="" class="social__img" />
-              </a>
-              <a href="" class="social__link">
-                <img src="" alt="" class="social__img" />
-              </a>
-              <a href="" class="social__link">
-                <img src="" alt="" class="social__img" />
-              </a>
-            </div>
-          </div>
-          <div class="footer__right">
-            <form class="contact__form">
-              <div class="contact__input-areas">
-                <div class="contact__line">
-                  <input
-                    class="contact__input-text"
-                    type="text"
-                    placeholder="Your name*"
-                  />
-                  <input
-                    class="contact__input-text"
-                    type="text"
-                    placeholder="Your email*"
-                  />
-                  <input
-                    class="contact__input-text"
-                    type="text"
-                    placeholder="Subjact"
-                  />
-                </div>
-                <textarea
-                  type="text"
-                  class="contact__input-textarea"
-                ></textarea>
-              </div>
-              <button class="contact__button">SEND MESSAGE</button>
-            </form>
           </div>
         </div>
       </div>
       <div class="rights">Copyright © 2019 All right reserved</div>
     </footer>
+
     <script
       src="https://kit.fontawesome.com/ce8672ee35.js"
       crossorigin="anonymous"
     ></script>
+
+    <script src="Flickity.js"></script>
   </body>
 </html>
